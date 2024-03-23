@@ -2,8 +2,8 @@
 // 你可以在此编辑器中写入代码 
 
 
-globalvar interactable;
 globalvar free_move;
+globalvar interactables;
 
 
 var json_string = file_text_open_read("mystery.json");
@@ -19,9 +19,11 @@ file_text_close(json_string);
 global.gameData = json_decode(content);
 
 global.currentRoom=global.gameData[?"rm_bedroom"];
-interactable=global.currentRoom[?"interactable"];
+interactables=global.currentRoom[?"interactables"];
+
 free_move=global.currentRoom[?"free_move"];
 if(free_move){show_debug_message("it's true!");}
+
 
 
 
