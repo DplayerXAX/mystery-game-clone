@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_car",
+    "path": "sprites/spr_car/spr_car.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

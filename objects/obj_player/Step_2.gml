@@ -13,4 +13,4 @@ if(keyboard_check_released(ord("D"))){
 sprite_index=spr_player_idle_right;
 }
 
-depth=-y;
+if(free_move){depth=-y;}

@@ -18,7 +18,6 @@ choice2.order=1;
 oneTimeExp=true;
 }
 if(answer!=""){
-show_debug_message("damn");
 draw_set_color(c_white);
 draw_set_font(font_word);
 draw_text(x-150,y-20,answer);
