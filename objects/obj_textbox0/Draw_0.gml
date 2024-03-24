@@ -36,5 +36,7 @@ if(keyboard_check(vk_space)&&timer_little<0){
 }else if(lineProgress==3){
 //room_goto(line[?"goto"]);
 //need to be fixed
+obj_player.image_xscale=2;
+obj_player.image_yscale=2;
 room_goto(rm_bedroom);
 }

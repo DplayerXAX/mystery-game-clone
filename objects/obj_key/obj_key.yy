@@ -2,12 +2,15 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_key",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "物体",
-    "path": "folders/物体.yy",
+    "name": "bedroom",
+    "path": "folders/物体/bedroom.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_key",
+    "path": "sprites/spr_key/spr_key.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

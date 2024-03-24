@@ -13,8 +13,8 @@ talk_apple=false;
 talk_car=false;
 talk_key=false;
 talk_door=false;
-
-
+timer_little=room_speed*0.2;
+timer_interact=room_speed*0.1;
 appleProgress=0;
 carProgress=0;
 keyProgress=0;

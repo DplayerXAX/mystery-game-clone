@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "物体",
-    "path": "folders/物体.yy",
+    "name": "bedroom",
+    "path": "folders/物体/bedroom.yy",
   },
   "parentObjectId": null,
   "persistent": false,
