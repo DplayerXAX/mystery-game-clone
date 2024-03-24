@@ -3,7 +3,7 @@
 
 
 
-instance_create_layer(x,y,"Instances",obj_key);
+instance_create_layer(x,y+5,"Instances",obj_key);
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-timer_interact=room_speed*0.1;
+timer_carInteract=room_speed*0.1;
 
 
 

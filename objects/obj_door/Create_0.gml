@@ -5,6 +5,6 @@
 
 
 
-timer_interact=room_speed*0.1;
+timer_doorInteract=room_speed*0.1;
 
 

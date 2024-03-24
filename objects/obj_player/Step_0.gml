@@ -23,6 +23,8 @@ x+=4;
 sprite_index=spr_player_walk_side_right;
 }
 }
+
+
 /*
 if(place_meeting(x,y,obj_wall)){
 	if(!place_meeting(_keep_x,_keep_y,obj_wall)){

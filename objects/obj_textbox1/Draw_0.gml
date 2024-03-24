@@ -81,7 +81,7 @@ if(talk_key){
 	
 }
 
-if(talk_door){
+if(talk_door&&!talk_apple&&!talk_car&&!talk_key){
 	show_debug_message("okay?");
 	free_move=false;
 	timer_little--;
@@ -106,10 +106,10 @@ if(talk_door){
 	room_goto(rm_kitchen);
 	}
 	timer_little=room_speed*0.2;
-	talk_key=false;
+	talk_door=false;
 	visible=false;
 	free_move=true;
-	
+	show_debug_message("it's over");
 
 	}
 	}
