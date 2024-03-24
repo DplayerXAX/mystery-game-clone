@@ -19,3 +19,5 @@ appleProgress=0;
 carProgress=0;
 keyProgress=0;
 doorProgress=0;
+speaker=instance_create_layer(x-270,y,"UI",obj_speaker);
+

@@ -19,6 +19,7 @@ global.currentRoom=global.gameData[?"rm_kitchen"];
 lines=global.currentRoom[?"lines"];
 interactables=global.currentRoom[?"interactables"];
 
-
-
+obj_player.x=100;
+obj_player.y=280;
+obj_player.inKitchen=true;
 

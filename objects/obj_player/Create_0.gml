@@ -3,3 +3,6 @@
 
 hasKey=false;
 hasApple=false;
+hasFish=false;
+inKitchen=false;
+met_voice=false;

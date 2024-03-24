@@ -6,7 +6,7 @@ globalvar answer;
 answer="";
 oneTimeExp=false;
 timer_little=room_speed*0.2;
-
+speaker=instance_create_layer(x-270,y,"UI",obj_speaker);
 
 
 
