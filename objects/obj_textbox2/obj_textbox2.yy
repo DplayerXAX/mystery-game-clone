@@ -1,13 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fridge",
-  "eventList": [],
+  "name": "obj_textbox2",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "kitchen",
-    "path": "folders/物体/kitchen.yy",
+    "name": "物体",
+    "path": "folders/物体.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_fridge",
-    "path": "sprites/spr_fridge/spr_fridge.yy",
+    "name": "spr_textbox",
+    "path": "sprites/spr_textbox/spr_textbox.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_textbox",
+    "path": "sprites/spr_textbox/spr_textbox.yy",
+  },
   "visible": true,
 }

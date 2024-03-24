@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "物体",
-    "path": "folders/物体.yy",
+    "name": "kitchen",
+    "path": "folders/物体/kitchen.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_wooden_fish",
+    "path": "sprites/spr_wooden_fish/spr_wooden_fish.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
