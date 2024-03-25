@@ -3,7 +3,7 @@
 
 
 timer_interact=room_speed*0.1;
-
+audio_play_sound(humming_sound,0,true);
 
 
 

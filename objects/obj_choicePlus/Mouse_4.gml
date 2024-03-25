@@ -8,7 +8,10 @@ show_debug_message(string(resultLine));
 answer=resultLine[|0];
 show_debug_message(answer);
 */
-obj_textbox2.fridgeProgress=4;
+obj_textbox2.choiceAnswer=myResult;
+obj_textbox2.toRoom=myRoom;
+obj_textbox2.hideText=false;
+obj_textbox2.fridgeProgress=destroyPermission;
 
 
 

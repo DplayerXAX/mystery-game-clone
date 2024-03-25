@@ -3,7 +3,7 @@
 
 
 
-if(obj_textbox2.fridgeProgress>3){
+if(obj_textbox2.fridgeProgress>=destroyPermission){
 instance_destroy();
 }
 

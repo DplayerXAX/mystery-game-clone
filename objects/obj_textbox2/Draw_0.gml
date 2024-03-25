@@ -130,6 +130,7 @@ if(talk_fish){
 	if(timer_little<0){
 	if(obj_player.met_voice){
 	obj_player.hasFish=true;
+	audio_play_sound(item_found_sound,0,false);
 	instance_destroy(obj_fish);
 	}
 	timer_little=room_speed*0.2;
@@ -198,19 +199,19 @@ if(talk_fridge){
 		choice2=kitChoices[|1];
 		choiceBox1=instance_create_layer(x+100,y-30,"UI",obj_choicePlus);
 		choiceBox1.myText=choice1[?"text"];
+		choiceBox1.destroyPermission=4;
 		choiceBox2=instance_create_layer(x+100,y+30,"UI",obj_choicePlus);
 		choiceBox2.myText=choice2[?"text"];
+		choiceBox2.destroyPermission=4;
 		}
 		fridgeFinish=5;
-	}else{		
-	}
-	draw_set_font(font_word);
-	draw_set_color(c_white);
-	if(fridgeProgress=3){
+		draw_set_font(font_word);
+		draw_set_color(c_white);
+		if(fridgeProgress=3){
 	
-	}
-	else{draw_text_ext(x-200,y-40,fridge_text,50,500);}
-	if(keyboard_check(vk_space)&&fridgeProgress!=3){
+		}
+		else{draw_text_ext(x-200,y-40,fridge_text,50,500);}
+		if(keyboard_check(vk_space)&&fridgeProgress!=3){
 		if(timer_little<0){
 		fridgeProgress++;
 		if(fridgeProgress!=fridgeFinish){
@@ -219,12 +220,83 @@ if(talk_fridge){
 		}
 	
 	}
+		
+	}else{		
+		fridgeFinish=2;
+		fridge_line=fridge_lines[|1];
+		fridge_line_lines=fridge_line[?"lines"];
+		
+		if(fridgeProgress==0&&!hideText){
+		fridge_line_line=fridge_line_lines[|0];
+		fridge_text=fridge_line_line[?"text"];
+		speaker.sprite_index=spr_speakerVoice;
+		draw_text_ext(x-200,y-40,fridge_text,50,500);
+		}
+		else if(hideText) {
+		speaker.sprite_index=spr_speakerMe;
+		fridge_line_line=fridge_line_lines[|1];
+		specialChoice=fridge_line_line[?"choices"];
+		choiceBox1=instance_create_layer(x+100,y+20,"UI",obj_choicePlus);
+		choiceBox1.myText="Give you later";
+		choiceBox1.destroyPermission=1;
+		choiceBox1.myResult="Fine, be quick.";
+		if(obj_player.hasApple){
+		appleChoice=specialChoice[|1];
+		choiceBox2=instance_create_layer(x,y-30,"UI",obj_choicePlus);
+		choiceBox2.myText=appleChoice[?"text"];
+		choiceBox2.destroyPermission=1;
+		appleChoiceLines=appleChoice[?"lines"];
+		appleChoiceLine=appleChoiceLines[|0];
+		choiceBox2.myResult=appleChoiceLine[?"text"];
+		choiceBox2.myRoom="rm_voice_angry";
+
+		}
+		if(obj_player.hasFish){
+		fishChoice=specialChoice[|0];
+		choiceBox3=instance_create_layer(x+200,y-30,"UI",obj_choicePlus);
+		choiceBox3.myText=fishChoice[?"text"];
+		choiceBox3.destroyPermission=1;
+		fishChoiceLines=fishChoice[?"lines"];
+		fishChoiceLine=fishChoiceLines[|0];
+		choiceBox3.myResult=fishChoiceLine[?"text"];
+		choiceBox3.myRoom="rm_voice_happy";
+		}
+		
+		
+		}else if(fridgeProgress==1){
+		speaker.sprite_index=spr_speakerVoice;
+		draw_set_font(font_word);
+		draw_set_color(c_white);
+		show_debug_message(choiceAnswer);
+		draw_text_ext(x-200,y-40,choiceAnswer,50,500);
+		}
+		
+		
+		if(keyboard_check(vk_space)){
+		if(timer_little<0){
+		if(fridgeProgress==0){
+		hideText=true;	
+		timer_little=room_speed*0.2;
+		}else{
+		fridgeProgress++;
+		}
+		if(fridgeProgress!=fridgeFinish){
+		timer_little=room_speed*0.2;
+		}
+		}
+	
+	}
+		
+	}
+	
 	
 	if(fridgeProgress==fridgeFinish){
 	if(timer_little<0){
+	speaker.sprite_index=spr_speakerMe;
 	timer_little=room_speed*0.2;
 	fridgeProgress=0;
 	talk_fridge=false;
+	obj_player.met_voice=true;
 	visible=false;
 	y=384;
 	free_move=true;

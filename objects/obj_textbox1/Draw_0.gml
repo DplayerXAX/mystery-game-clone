@@ -17,10 +17,13 @@ if(talk_apple){
 	if(keyboard_check(vk_space)&&timer_little<0){
 	appleProgress++;
 	instance_destroy(obj_apple);
+	if(appleProgress==1){audio_play_sound(item_found_sound,0,false);}
 	obj_player.hasApple=true;
+	
 	timer_little=room_speed*0.2;
 	if(appleProgress=2){
 	talk_apple=false;
+	
 	visible=false;
 	free_move=true;
 
@@ -70,6 +73,7 @@ if(talk_key){
 	if(timer_little<0){
 	timer_little=room_speed*0.2;
 	obj_player.hasKey=true;
+	audio_play_sound(item_found_sound,0,false);
 	instance_destroy(obj_key);
 	talk_key=false;
 	visible=false;
