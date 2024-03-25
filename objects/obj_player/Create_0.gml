@@ -6,4 +6,5 @@ hasApple=false;
 hasFish=false;
 inKitchen=false;
 met_voice=false;
+finalAct=false;
 audio_play_sound(mystery_background,0,true);

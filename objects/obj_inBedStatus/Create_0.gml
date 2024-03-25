@@ -27,6 +27,6 @@ lines=global.currentRoom[?"lines"];
 choiceLine=lines[|1];
 choices=choiceLine[?"choices"];
 free_move=global.currentRoom[?"free_move"];
-if(free_move){show_debug_message("it's true!");}
+
 
 

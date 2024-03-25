@@ -64,15 +64,16 @@ if(inKitchen){
 		}
 	}
 }
-/*
-if(place_meeting(x,y,obj_wall)){
-	if(!place_meeting(_keep_x,_keep_y,obj_wall)){
+if(inKitchen){
+if(place_meeting(x,y,obj_fridge)){
+	
+	if(!place_meeting(_keep_x,_keep_y,obj_fridge)){
 	x=_keep_x;
 	y=_keep_y;
-	show_debug_message("what");
 	}
 }
-
+}
+/*
 if(place_meeting(x,y,obj_door)){
 	if(_get_key=0){
 	x=_keep_x;
