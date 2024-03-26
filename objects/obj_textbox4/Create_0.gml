@@ -16,3 +16,4 @@ talk_angry=true;
 angryProgress=0;
 speaker=instance_create_layer(x-270,y,"UI",obj_speaker);
 speaker.sprite_index=spr_speakerVoice;
+audio_play_sound(funny_sound,0,true);

@@ -27,6 +27,6 @@ lines=global.currentRoom[?"lines"];
 choiceLine=lines[|1];
 choices=choiceLine[?"choices"];
 free_move=global.currentRoom[?"free_move"];
-
+audio_play_sound(mystery_background,0,true);
 
 

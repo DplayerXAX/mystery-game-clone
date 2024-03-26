@@ -61,6 +61,7 @@
     {"name":"rm_bedroom","order":5,"path":"rooms/rm_bedroom/rm_bedroom.yy",},
     {"name":"rm_kitchen","order":2,"path":"rooms/rm_kitchen/rm_kitchen.yy",},
     {"name":"spr_fridge","order":28,"path":"sprites/spr_fridge/spr_fridge.yy",},
+    {"name":"spr_notice","order":36,"path":"sprites/spr_notice/spr_notice.yy",},
     {"name":"spr_choice","order":11,"path":"sprites/spr_choice/spr_choice.yy",},
     {"name":"spr_plastic_fish","order":14,"path":"sprites/spr_plastic_fish/spr_plastic_fish.yy",},
     {"name":"spr_car","order":12,"path":"sprites/spr_car/spr_car.yy",},
@@ -95,8 +96,10 @@
     {"name":"spr_angry","order":35,"path":"sprites/spr_angry/spr_angry.yy",},
     {"name":"spr_tree","order":5,"path":"sprites/spr_tree/spr_tree.yy",},
     {"name":"obj_tree_special","order":7,"path":"objects/obj_tree_special/obj_tree_special.yy",},
+    {"name":"obj_replay","order":6,"path":"objects/obj_replay/obj_replay.yy",},
     {"name":"spr_witch","order":8,"path":"sprites/spr_witch/spr_witch.yy",},
     {"name":"obj_textbox2","order":29,"path":"objects/obj_textbox2/obj_textbox2.yy",},
     {"name":"spr_player_walk_side_left","order":6,"path":"sprites/spr_player_walk_side_left/spr_player_walk_side_left.yy",},
+    {"name":"funny_sound","order":3,"path":"sounds/funny_sound/funny_sound.yy",},
   ],
 }

@@ -15,3 +15,4 @@ timer_interact=room_speed*0.1;
 talk_happy=true;
 happyProgress=0;
 speaker=instance_create_layer(x-270,y,"UI",obj_speaker);
+audio_play_sound(funny_sound,0,true);
